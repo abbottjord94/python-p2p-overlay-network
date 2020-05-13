@@ -101,7 +101,7 @@ print(sys.argv)
 for arg in sys.argv:
 	if arg == '--connect':
 		print(arg, sys.argv[sys.argv.index(arg)+1], sys.argv[sys.argv.index(arg)+2])
-		_listenServerManager = ListenServerManager('192.168.0.14',5005,(sys.argv[sys.argv.index(arg)+1], int(sys.argv[sys.argv.index(arg)+2])))
+		_listenServerManager = ListenServerManager('',5005,(sys.argv[sys.argv.index(arg)+1], int(sys.argv[sys.argv.index(arg)+2])))
 
 print("No arguments found")
-_listenServerManager = ListenServerManager('192.168.0.14',5005,None)
+_listenServerManager = ListenServerManager('',5005,None)
