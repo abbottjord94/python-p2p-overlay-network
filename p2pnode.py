@@ -34,7 +34,7 @@ class ClientConnectionManager():
 					print(sock,msg.decode())
 					msg_obj = json.loads(msg.decode())
 					if(msg_obj.get("header") == "LISTEN_PORT"):
-						
+						print("Listen Port message received: ", msg_obj)
 
 class ListenServerManager():
 
